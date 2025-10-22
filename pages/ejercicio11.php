@@ -7,9 +7,6 @@
 </head>
 <body>
     <h1>FORMULARIO (control checkbox)</h1>
-<!-- Confeccionar un formulario que solicite la carga del nombre de una persona y que permita seleccionar
-una serie de deportes que practica (futbol, basket, tennis, voley)
-Mostrar en la página que procesa el formulario la cantidad de deportes que practica. -->
     <h2>Selecciona tus Deportes</h2>
     
     <form action="" method="POST">
