@@ -12,7 +12,8 @@
     <form action="" method="POST">
         <label for="name">Nombre de la Persona:</label>
         <input type="text" name="person_name" required>
-
+        <br>
+        
         <label>Deportes que Practica:</label>
         <label><input type="checkbox" name="sports[]" value="futbol">Fútbol</label>
         <label><input type="checkbox" name="sports[]" value="basket">Backet</label>

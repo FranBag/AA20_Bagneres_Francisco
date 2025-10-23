@@ -6,15 +6,31 @@
     <title>Ejercicio 13</title>
 </head>
 <body>
-<!-- Confeccionar una página que muestre un contrato dentro de un textarea,
-disponer puntos suspensivos donde el operador debe ingresar un texto. La página que procesa el formulario sólo debe mostrar el contrato con las modificaciones que hizo el operador.
-Ej. de un contrato puede ser:
-En la ciudad de [........], se acuerda entre la Empresa [..........] 
-representada por el Sr. [..............] en su carácter de Apoderado,
-con domicilio en la calle [..............] y el Sr. [..............],
-futuro empleado con domicilio en [..............], celebrar el presente 
+    <h1>FORMULARIO (control textarea)</h1>
+    
+    <form action="" method="POST">
+        
+        <label for="contract_content">Rellena los Datos del Contrato</label> <br>
+        <textarea name="contract_content" rows="15" cols="80" required>
+En la ciudad de [Ciudad], se acuerda entre la Empresa [Nombre de la Empresa] 
+representada por el Sr. [Representante] en su carácter de Apoderado,
+con domicilio en la calle [Domicilio de la Empresa] y el Sr. [Nombre del Empleado],
+futuro empleado con domicilio en [Domicilio del Empleado], celebrar el presente 
 contrato a Plazo Fijo, de acuerdo a la normativa vigente de los
-artículos 90,92,93,94, 95 y concordantes de la Ley de Contrato de Trabajo N° 20.744. -->
+artículos 90, 92, 93, 94, 95 y concordantes de la Ley de Contrato de Trabajo N° 20.744.
+        </textarea> <br>
+        <input type="submit" value="Mostrar Contrato Final">
+    </form>
+
+    <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contract_content"])) {
+
+            $modified_contract = htmlspecialchars($_POST["contract_content"]);
+            
+            echo "<h2>Contrato Final:</h2>";
+            echo $modified_contract;
+        }
+    ?>
 
 </body>
 </html>

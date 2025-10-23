@@ -12,7 +12,7 @@
         $string2 = "Amarillo";
         $string3 = "Verde";
 
-        echo "El semaforo tiene tres colores: $string1, $string2, $string3.";
+        echo "<p>El semaforo tiene tres colores: $string1, $string2, $string3.</p>";
     ?>
 </body>
 </html>
