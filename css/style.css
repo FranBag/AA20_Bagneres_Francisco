@@ -1,5 +1,6 @@
 body {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     background-color: darkgreen;
     justify-items: center;
@@ -8,6 +9,7 @@ body {
 }
 h1, h2 {
     color: whitesmoke;
+    margin: 0;
 }
 
 .container {
